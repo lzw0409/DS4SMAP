@@ -1,0 +1,26 @@
+df= pd.read_excel(r'Data run 2 for students.xlsx', sheet_name = 'Enrolments by Age')
+
+# Prepare Data
+
+df = df.groupby(['Age Range']).sum()
+
+# Make the plot with pandas
+plt.figure()
+df.plot(kind='bar', figsize=(8, 8) )
+
+
+plt.title("bar Chart of Age percentage of participants in the course")
+
+plt.ylabel("% taken from 369 respondents")
+plt.legend("")
+plt.show()
+
+
+df2= pd.read_excel(r'Data run 2 for students.xlsx', sheet_name = 'Enrolments by Employment status')
+# Prepare Data
+# Make the plot with pandas
+plt.figure(figsize=(13, 8))
+plt.plot(df2["Employment Status"],df2["% of Total Survey Respondents"], )
+plt.title("plot Chart of Employment Status")
+plt.ylabel("% of Total Survey Respondents")
+plt.xlabel("Employment Status")
