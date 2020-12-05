@@ -1,4 +1,4 @@
-# DS4SMAP
+# DS4DMAP
 Group4:Covid-19 Critical Care
 Angie Liu, Ziming Bai, Di Nie, Xi Pang, Feijia Sun
 
